@@ -1,6 +1,0 @@
-{
-    "users": [
-        { "id": 1, "name": "Alysson", "email": "alysson@gmail.com", "senha": "aly123" },
-        { "id": 2, "name": "Luffy", "email": "reidospiratas@gmail.com", "senha": "carne123" }
-    ]
-}

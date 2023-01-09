@@ -9,13 +9,11 @@ import { Button } from '../../components/button';
 import { Header } from '../../components/header';
 import { Input } from '../../components/input';
 
-import { api } from '../../services/api'
-
 import { Column, Container, CriarText, EsqueciText, Row, SubtitleLogin, Title, TitleLogin, Wrapper } from './styles';
 
 const schema = yup.object({
     email: yup.string().email('E-mail não é válido').required('Campo obrigatório'),
-    password: yup.string().min(3, 'Senha deve ter pelo menos 3 caracteres').required('Campo obrigatório'),
+    password: yup.string().min(4, 'Senha deve ter pelo menos 4 caracteres').required('Campo obrigatório'),
   }).required();
 
 const Login = () => {
@@ -29,9 +27,7 @@ const Login = () => {
 
     const onSubmit = async (formData) => {
         try{
-            const {data} = await api.get(`/users?email=${formData.email}&senha=${formData.password}`);
-            
-            if(data.length && data[0].id){
+            if(formData.email && formData.password){
                 navigate('/feed') 
                 return
             }
@@ -40,7 +36,6 @@ const Login = () => {
             alert('Houve um erro.')
         }
     };
-
     return (
         <>
             <Header />
@@ -52,7 +47,7 @@ const Login = () => {
                 </Column>
                 <Column>
                     <Wrapper>
-                        <TitleLogin>Faça seu cadastro</TitleLogin>
+                        <TitleLogin>Faça login</TitleLogin>
                         <SubtitleLogin>Faça seu login e make the change.</SubtitleLogin>
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <Input name="email" errorMessage={errors.email?.message} control={control} placeholder="E-mail" leftIcon={<MdEmail />} />

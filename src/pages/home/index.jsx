@@ -10,7 +10,7 @@ const Home = () => {
     const navigate = useNavigate();
 
     const handleClickSignIn = () => {
-        navigate('/register')
+        navigate('/login')
     }
 
     return (
