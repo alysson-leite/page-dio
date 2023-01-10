@@ -10,6 +10,15 @@ export const Container = styled.main`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px){
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
 `
 
 export const Wrapper = styled.div`
@@ -37,6 +46,12 @@ export const Title = styled.h2`
     line-height: 44px;
 
     color: #FFFFFF;
+
+    @media (max-width: 768px){
+        font-size: 26px;
+        width: 350px;
+        text-align: center;
+    }
 `
 
 export const TitleLogin = styled.p`

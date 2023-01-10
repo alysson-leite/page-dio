@@ -10,6 +10,15 @@ export const Container = styled.main`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px){
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
 `
 
 export const Title = styled.h2`
