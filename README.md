@@ -1,43 +1,62 @@
-# Getting Started with Create React App
+# Página Clone da DIO - Digital Innovation One
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Este projeto foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Clone da página da DIO utilizando ReactJS para fazer as rotas em Single Page Aapplication, utilizando diversas bibliotecas como: styled-components, react-router-dom, react hook-form, entre outros.
 
-In the project directory, you can run:
 
-### `npm start`
+![Imagem-projeto](./.github/clone-dio.jpg)
+![Imagem-projeto-register](./.github/clone-dio-register.jpg)
+![Imagem-projeto-login](./.github/clone-dio-login.jpg)
+![Imagem-projeto-feed](./.github/clone-dio-feed.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Deploy
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Para fazer o deploy desse projeto rode
 
-### `npm test`
+```bash
+  npm run deploy
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ou acesse a página abaixo:
 
-### `npm run build`
+[Clone DIO](https://clone-site-dio.netlify.app//)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tecnologias
+- HTML
+- CSS
+- JavaScript
+- ReactJS
+    - styled-components
+    - react-router-dom
+    - react-icons
+    - react-hook-form
+    - schema validation do react-hook-form
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Git e Github
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Validação de e-mail e senha
 
-### `npm run eject`
+Na página de login, a validação de e-mail e senha foi feita com react-hook-form para que seja colocado um formato de e-mail válido e uma senha com no mínimo 4 caracteres, para validar e seguir para a página de 'feed'.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Imagem-projeto-validação](./.github/clone-dio-validacao.jpg)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## O que aprendi
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Aprendi a utilizar as bibliotecas do ReactJS para criar rotas e fazer um site Single Page Application (SPA)
+
+Aprendi também a estilizar componentes utilizando styled-components, uma biblioteca que possibilita escrever códigos CSS dentro do JavaScript, ganhando agilidade no desenvolvimento e facilidade na posterior manutenção.
+
+Aprendi ainda a utilizar a a bilbioteca react-hook-form para validar formulários, facilitando a implantação com pouco código escrito e tendo a vantagem de não re-renderizar a cada mudança no valor de um input.
+
+## Contato
+
+[alysson_leite@yahoo.com.br](alysson_leite@yahoo.com.br)
+
+[Linkedin](https://www.linkedin.com/in/alysson-leite-14040a239/)
+
+[Github](https://github.com/alysson-leite)
 
 ## Learn More
 
@@ -65,6 +84,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
